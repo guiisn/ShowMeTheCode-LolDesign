@@ -29,7 +29,7 @@ Usando npm
     
 ## Stack utilizada
 
-**Front-end:** React, TailwindCSS
+**Front-end:** React, TailwindCSS, Typescript
 
 
 ## Estrutura de pastas
