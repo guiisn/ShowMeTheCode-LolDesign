@@ -1,0 +1,48 @@
+body::-webkit-scrollbar {
+  background: #13131f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8257e6;
+  border-radius: 5px;
+}
+
+button.secondary {
+  overflow: hidden;
+  position: relative;
+}
+
+button.secondary::after {
+  background-color: #8257e6;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+button.secondary:hover::after {
+  transform: translate(0, 0);
+}
+button.secondary:hover {
+  border: 2px solid transparent;
+  color: #f9f9f9;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+img {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
