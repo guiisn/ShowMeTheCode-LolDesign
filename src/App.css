@@ -14,7 +14,7 @@ button.secondary {
 
 button.secondary::after {
   background-color: #8257e6;
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   width: 100%;
@@ -43,6 +43,16 @@ img {
 }
 
 img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#card {
+  transition: all 0.7s;
+  height: 600px;
+}
+
+#card:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }

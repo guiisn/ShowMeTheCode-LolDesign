@@ -9,7 +9,7 @@ import styles from "../global/styles";
 export default class Header extends Component<any> {
   render() {
     return (
-      <header className="z-50 fixed w-full h-20 border-b-2 border-secondary flex justify-between items-center px-10 shadow-md bg-primary">
+      <header className="fixed z-50 flex items-center justify-between w-full h-20 px-10 border-b-2 shadow-md border-secondary bg-primary">
         <a
           target="_blank"
           href="https://www.linkedin.com/in/guiisn/"
@@ -20,9 +20,13 @@ export default class Header extends Component<any> {
         <Typographies type="title" tam="regular" color={1}>
           Telzir Telefonia | FaleMais
         </Typographies>
-        <button className={styles.buttonIcon}>
+        <a
+          target={"_blank"}
+          href="https://github.com/guiisn/ShowMeTheCode-LolDesign"
+          className={styles.buttonIcon}
+        >
           <Icon icon="mdi:github" />
-        </button>
+        </a>
       </header>
     );
   }

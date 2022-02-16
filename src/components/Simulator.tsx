@@ -1,17 +1,17 @@
-import { Component } from "react";
+import { Component } from 'react';
 
-import Typographies from "./components/Typographies";
-import { ResultLaptop, ResultMobile } from "./components/Results";
-import styles from "../global/styles";
+import Typographies from './components/Typographies';
+import { ResultLaptop, ResultMobile } from './components/Results';
+import styles from '../global/styles';
 
-import { DDDs, plans, columns, prices } from "../utils/informations";
-import { humanizePrice } from "../utils/functions";
+import { DDDs, plans, columns, prices } from '../utils/informations';
+import { humanizePrice } from '../utils/functions';
 
 import {
   getPriceOfOriginToDestiny,
   getTimeOfPlan,
   calculator,
-} from "../utils/functions";
+} from '../utils/functions';
 
 interface SimulatorState {
   origin: string;
@@ -27,10 +27,10 @@ export default class Simulator extends Component<any, SimulatorState> {
     super(props);
 
     this.state = {
-      origin: "",
-      destiny: "",
+      origin: '',
+      destiny: '',
       time: 0,
-      plan: "",
+      plan: '',
       withFaleMais: 0,
       withoutFaleMais: 0,
     };
