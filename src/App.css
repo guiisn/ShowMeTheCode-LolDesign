@@ -12,6 +12,10 @@ button.secondary {
   position: relative;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 button.secondary::after {
   background-color: #8257e6;
   content: '';

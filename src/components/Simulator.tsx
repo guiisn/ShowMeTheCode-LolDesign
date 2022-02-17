@@ -71,7 +71,10 @@ export default class Simulator extends Component<any, SimulatorState> {
     };
 
     return (
-      <div className="sticky flex flex-col items-center justify-start w-full px-10 mb-20 lg:mb-96 screen">
+      <div
+        className="sticky flex flex-col items-center justify-start w-full px-10 mb-20 lg:mb-96 screen"
+        id="simulator"
+      >
         <Typographies type="title" tam="big" color={1}>
           Simulador
         </Typographies>

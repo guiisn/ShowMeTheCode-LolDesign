@@ -1,14 +1,22 @@
-import { Component } from "react";
+import { Component } from 'react';
 
-import { Icon } from "@iconify/react";
+import { Icon } from '@iconify/react';
 
-import Typographies from "./components/Typographies";
-import styles from "../global/styles";
+import Typographies from './components/Typographies';
+import styles from '../global/styles';
 
-import logo from "../assets/logo.svg";
+import logo from '../assets/logo.svg';
 
 export default class Infos extends Component {
+  componentDidMount() {
+    console.log(window.screen.height / 2);
+  }
+
   render() {
+    function topFunction() {
+      window.scrollTo(0, window.screen.height / 2);
+    }
+
     return (
       <div className="sticky flex items-center justify-center w-full h-screen px-10 lg:justify-between">
         <div className="text-center lg:text-left lg:w-1/3">
@@ -25,7 +33,10 @@ export default class Infos extends Component {
           </Typographies>
           <br />
           <div className="w-full">
-            <button className={`${styles.buttonSecondary} w-full lg:w-1/2`}>
+            <button
+              className={`${styles.buttonSecondary} w-full lg:w-1/2`}
+              onClick={topFunction}
+            >
               <Icon icon="mdi:phone" /> Simule uma ligação
             </button>
           </div>
